@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python \"D:\\\\RC\\\\S100\\\\视觉部分\\\\_temp_extract_pdf.py\")",
+      "PowerShell(python -c \"import sys; print\\(sys.version\\)\")",
+      "PowerShell(python -c \"import fitz; print\\('pymupdf ok'\\)\" 2>$null)",
+      "PowerShell(python -c \"import pdfplumber; print\\('pdfplumber ok'\\)\" 2>$null)",
+      "PowerShell(python -c \"import PyPDF2; print\\('PyPDF2 ok'\\)\" 2>$null)",
+      "PowerShell(pip install pymupdf -q 2>&1)",
+      "PowerShell(python -c \"import fitz; print\\(fitz.__doc__\\)\")",
+      "PowerShell(python \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\_render_pdf.py\")"
+    ]
+  }
+}

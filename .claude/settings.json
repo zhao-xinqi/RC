@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Zhao-Xinqi/AppData/Local/Temp/**)",
+      "PowerShell(python \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\_test_p5_integration.py\")",
+      "PowerShell(Remove-Item \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\_test_p5_integration.py\" -Confirm:$false)",
+      "PowerShell(Remove-Item \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\P5 ����\\\\_verify_out\" -Recurse -Force -Confirm:$false -ErrorAction SilentlyContinue)",
+      "PowerShell(python \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\_smoke_all.py\")",
+      "PowerShell(Remove-Item \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\P5 ����\\\\_diag_angle.py\" -Confirm:$false)",
+      "PowerShell(python 'C:\\\\Users\\\\Zhao-Xinqi\\\\AppData\\\\Local\\\\Temp\\\\main_route_test.py')"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Zhao-Xinqi\\AppData\\Local\\Temp"
+    ]
+  }
+}
