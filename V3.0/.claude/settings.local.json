@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python --version)",
+      "PowerShell(python \"D:\\\\RC\\\\S100\\\\视觉部分\\\\V2.0\\\\P1 巡线\\\\test.py\" --synthetic --no-show --frames 60 --warmup 10 --ablation)",
+      "PowerShell(& \"D:\\\\RC\\\\S100\\\\视觉部分\\\\V2.0\\\\P1 巡线\\\\run.bat\" --synthetic --no-show --frames 20 --warmup 5)"
+    ]
+  }
+}
