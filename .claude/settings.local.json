@@ -8,7 +8,17 @@
       "PowerShell(python -c \"import PyPDF2; print\\('PyPDF2 ok'\\)\" 2>$null)",
       "PowerShell(pip install pymupdf -q 2>&1)",
       "PowerShell(python -c \"import fitz; print\\(fitz.__doc__\\)\")",
-      "PowerShell(python \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\_render_pdf.py\")"
+      "PowerShell(python \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\_render_pdf.py\")",
+      "PowerShell(curl.exe -sI -m 20 https://github.com/GyanD/codexffmpeg/releases/download/9.0/ffmpeg-9.0-full_build.zip | Select-Object -First 5; \"---- exit: $LASTEXITCODE ----\")",
+      "PowerShell(Set-Location \"d:\\\\RC\\\\S100\\\\视觉部分\\\\rtsp_streaming\"; .\\\\mediamtx.exe > \"$env:TEMP\\\\mediamtx.log\" 2>&1)",
+      "PowerShell(Start-Sleep -Seconds 2; Get-NetTCPConnection -LocalPort 8554 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort; \"---- mediamtx log tail ----\"; Get-Content \"$env:TEMP\\\\mediamtx.log\" -Tail 8 -ErrorAction SilentlyContinue)",
+      "PowerShell(Test-NetConnection -ComputerName 192.168.43.38 -Port 22 -InformationLevel Quiet)",
+      "PowerShell(python --version)",
+      "PowerShell(python -c \"import cv2, numpy; print\\('cv2', cv2.__version__\\); print\\('numpy', numpy.__version__\\)\")",
+      "PowerShell(python \"C:\\\\Users\\\\Zhao-Xinqi\\\\AppData\\\\Local\\\\Temp\\\\test_main_bottom.py\")",
+      "PowerShell(python -c \"import cv2; print\\('CAP_MSMF:', hasattr\\(cv2, 'CAP_MSMF'\\)\\); print\\('CAP_PROP_FOURCC:', hasattr\\(cv2, 'CAP_PROP_FOURCC'\\)\\); print\\('VideoWriter_fourcc:', hasattr\\(cv2, 'VideoWriter_fourcc'\\)\\)\")",
+      "PowerShell(git -C \"d:\\\\RC\\\\S100\\\\�Ӿ�����\" status --short)",
+      "PowerShell(python -m py_compile \"d:\\\\RC\\\\S100\\\\�Ӿ�����\\\\v4.0\\\\camera_bottom\\\\main_bottom.py\")"
     ]
   }
 }
